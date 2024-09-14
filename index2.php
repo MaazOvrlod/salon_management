@@ -43,7 +43,7 @@ include('includes/dbconnection.php');
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h1 class="hero-title">TESTING IN GITHUB CLONE <i class="fa fa-scissors"></i></h1>
+          <h1 class="hero-title">MEN'S SALON MANAGEMENT SYSTEM <i class="fa fa-scissors"></i></h1>
           <p class="hero-text"><strong>YOUR TYPES <i class="fa fa-users"></i> , YOUR STYLE <i
                 class="fa fa-angellist"></i> , YOUR COLOR <i class="fa fa-asterisk"></i> .</strong> </p>
                 <p class="hero-text2"><strong>ANY TIME ANYWHERE "24X7" OPEN</strong> </p>
