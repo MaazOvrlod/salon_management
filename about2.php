@@ -61,12 +61,9 @@ include('includes/dbconnection.php');
                         class="img-responsive"></div>
                 <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                     <div class="well-block">
-                        <?php
-                        $ret = mysqli_query($con, "select * from tblpage where PageType='aboutus' ");
-                        $cnt = 1;
-                        while ($row = mysqli_fetch_array($ret)) {
+                        
 
-                            ?>
+                            
                             <h1>
                                 <?php echo $row['PageTitle']; ?>
                             </h1>
@@ -74,7 +71,7 @@ include('includes/dbconnection.php');
                             <p>
                                 <?php echo $row['PageDescription']; ?>
                             </p>
-                        <?php } ?>
+                        
                     </div>
                 </div>
             </div>

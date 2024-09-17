@@ -34,24 +34,24 @@ if (isset($_POST['sub'])) {
                     <div class="footer-widget">
                         <h2 class="widget-title">Salon Address</h2>
                         <ul class="listnone contact">
-                        <?php
+                            <?php
 
-$ret = mysqli_query($con, "select * from tblpage where PageType='contactus' ");
-$cnt = 1;
-while ($row = mysqli_fetch_array($ret)) {
+                            $ret = mysqli_query($con, "select * from tblpage where PageType='contactus' ");
+                            $cnt = 1;
+                            while ($row = mysqli_fetch_array($ret)) {
 
-    ?>
-    <li><i class="fa fa-map-marker"></i>
-        <?php echo $row['PageDescription']; ?>
-    </li>
-    <li><i class="fa fa-phone"></i>
-    <a href="tel:9435059030"><?php echo $row['MobileNumber']; ?></a>
-    </li>
+                                ?>
+                                <li><i class="fa fa-map-marker"></i>
+                                    <?php echo $row['PageDescription']; ?>
+                                </li>
+                                <li><i class="fa fa-phone"></i>
+                                    <a href="tel:9435059030"><?php echo $row['MobileNumber']; ?></a>
+                                </li>
 
-    <li><i class="fa fa-envelope-o"></i>
-    <a href="mailto:aayurdhafoundation@gmail.com"><?php  echo $row['Email'];?></a>
-    </li>
-<?php } ?>
+                                <li><i class="fa fa-envelope-o"></i>
+                                    <a href="mailto:aayurdhafoundation@gmail.com"><?php echo $row['Email']; ?></a>
+                                </li>
+                            <?php } ?>
                         </ul>
                     </div>
                 </div>
@@ -84,10 +84,11 @@ while ($row = mysqli_fetch_array($ret)) {
                                 <input type="text" class="form-control" placeholder="Enter your email address"
                                     name="email">
                                 <span class="input-group-btn">
-                            
 
 
-                                <a href="login.php" class="btn btn-default">Subscribe<i class="fa fa-gratipay"></i></a>
+
+                                    <a href="login.php" class="btn btn-default">Subscribe<i
+                                            class="fa fa-gratipay"></i></a>
 
 
 
@@ -105,7 +106,8 @@ while ($row = mysqli_fetch_array($ret)) {
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="copyright-content">
                             <p><i class="fa fa-copyright"></i> Men Salon Management System 2023 || Created by
-                                <span>Abhishek singh</span></p>
+                                <span>Abhishek singh</span>
+                            </p>
                         </div>
                     </div>
                 </div>

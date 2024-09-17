@@ -7,12 +7,14 @@ include('includes/dbconnection.php');
 <html lang="en">
 
 <head>
-   
+
     <title>Men Salon Management System || Contact Page</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7cMontserrat:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
     <!-- Font Awesome -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <!-- Style -->
@@ -26,7 +28,7 @@ include('includes/dbconnection.php');
 </head>
 
 <body>
-    <?php include_once('includes/header.php');?>
+    <?php include_once('includes/header.php'); ?>
     <div class="page-header">
         <div class="container">
             <div class="row">
@@ -49,75 +51,92 @@ include('includes/dbconnection.php');
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     <div class="widget widget-contact">
-                         <?php
+                        <?php
 
-$ret=mysqli_query($con,"select * from tblpage where PageType='contactus' ");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
+                        $ret = mysqli_query($con, "select * from tblpage where PageType='contactus' ");
+                        $cnt = 1;
+                        while ($row = mysqli_fetch_array($ret)) {
 
-?>
-                        <!-- widget search -->
-                        <h3 class="widget-title">Contact Info <i class="fa fa-address-book"></i></h3>
-                        <address>
-                            <strong><i class="fa fa-location-arrow"></i> Address: </strong>
-                            <?php  echo $row['PageDescription'];?>
-                           <br>
-                            <br>
-                            
-                            <strong><i class="fa fa-phone-square"></i> Phone no:</strong> <a href="tel:9435059030"><?php echo $row['MobileNumber']; ?></a>
+                            ?>
+                            <!-- widget search -->
+                            <h3 class="widget-title">Contact Info <i class="fa fa-address-book"></i></h3>
+                            <address>
+                                <strong><i class="fa fa-location-arrow"></i> Address: </strong>
+                                <?php echo $row['PageDescription']; ?>
+                                <br>
+                                <br>
 
-                        </address>
-                        <address>
-                            <strong> <i class="fa fa-envelope"></i> Email: </strong>
-                            <a href="mailto:aayurdhafoundation@gmail.com"><?php  echo $row['Email'];?></a>
-                          
-                        </address>
-                         <address>
-                            <strong> <i class="fa fa-clock-o"></i> Timing: </strong>
-                            
-                           <?php  echo $row['Timing'];?>
-                        </address><?php } ?>
+                                <strong><i class="fa fa-phone-square"></i> Phone no:</strong> <a
+                                    href="tel:9435059030"><?php echo $row['MobileNumber']; ?></a>
+
+                            </address>
+                            <address>
+                                <strong> <i class="fa fa-envelope"></i> Email: </strong>
+                                <a href="mailto:aayurdhafoundation@gmail.com"><?php echo $row['Email']; ?></a>
+
+                            </address>
+                            <address>
+                                <strong> <i class="fa fa-clock-o"></i> Timing: </strong>
+
+                                <?php echo $row['Timing']; ?>
+                            </address><?php } ?>
                     </div>
                     <!-- /.widget search -->
                     <div class="widget widget-social">
                         <div class="social-circle">
-                            <a href="https://www.facebook.com/ab.abhishek.1806?mibextid=ZbWKwL" class="#"><i class="fa fa-facebook"></i></a>
-                            <a href="https://www.linkedin.com/in/abhishek-singh-531889240/" class="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/shekabhi_03/" class="#"><i class="fa fa-instagram"></i></a>
-                            
-                            
-                            
+                            <a href="https://www.facebook.com/ab.abhishek.1806?mibextid=ZbWKwL" class="#"><i
+                                    class="fa fa-facebook"></i></a>
+                            <a href="https://www.linkedin.com/in/abhishek-singh-531889240/" class="#"><i
+                                    class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/shekabhi_03/" class="#"><i
+                                    class="fa fa-instagram"></i></a>
+
+
+
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            
-                          
-                    <div class="well-block">
-                        <?php
 
-$ret=mysqli_query($con,"select * from tblpage where PageType='aboutus' ");
-$cnt=1;
-while ($row=mysqli_fetch_array($ret)) {
 
-?>
-                        <h1><?php  echo $row['PageTitle'];?></h1>
-                        <h5 class="small-title ">best experience ever</h5>
-                        <p><?php  echo $row['PageDescription'];?></p><?php } ?>
-                         </div>
-                </div>
+                            <div class="well-block">
+                                <?php
+
+                                $ret = mysqli_query($con, "select * from tblpage where PageType='aboutus' ");
+                                $cnt = 1;
+                                while ($row = mysqli_fetch_array($ret)) {
+
+                                    ?>
+                                    <h1><?php echo $row['PageTitle']; ?></h1>
+                                    <h5 class="small-title ">best experience ever</h5>
+                                    <p><?php echo $row['PageDescription']; ?></p><?php } ?>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- google map  -->
-    <div style="overflow:hidden;resize:none;max-width:100%;width:1500px;height:500px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=NERIM+Group+of+Institutions,+Padma+Nath+sarmah+Bhawan,+Tripura+Road,+Jaya+Nagar,+Khanapara,+Guwahati,+Assam,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes" id="authorize-maps-data">premium bootstrap themes</a><style>#my-map-display img{max-height:none;max-width:none!important;background:none!important;}</style></div> 
-<!-- google map end  -->
-<!-- <section class="enquiry">
+    </div>
+    <!-- google map  -->
+    <div style="overflow:hidden;resize:none;max-width:100%;width:1500px;height:500px;">
+        <div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                style="height:100%;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=NERIM+Group+of+Institutions,+Padma+Nath+sarmah+Bhawan,+Tripura+Road,+Jaya+Nagar,+Khanapara,+Guwahati,+Assam,+India&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div><a class="from-embedmap-code" href="https://www.bootstrapskins.com/themes"
+            id="authorize-maps-data">premium bootstrap themes</a>
+        <style>
+            #my-map-display img {
+                max-height: none;
+                max-width: none !important;
+                background: none !important;
+            }
+        </style>
+    </div>
+    <!-- google map end  -->
+    <!-- <section class="enquiry">
     <div class="enquiry-section">
        
         <div class="enquiry-form">
@@ -154,8 +173,8 @@ while ($row=mysqli_fetch_array($ret)) {
             </div>
     </div>
     </section>    -->
-    
-   <?php include_once('includes/footer.php');?>
+
+    <?php include_once('includes/footer.php'); ?>
     <!-- /.footer-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>

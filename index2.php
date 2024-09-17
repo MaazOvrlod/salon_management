@@ -27,6 +27,7 @@ include('includes/dbconnection.php');
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- Style -->
   <link href="css/style.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -39,14 +40,15 @@ include('includes/dbconnection.php');
   <?php include_once('includes/header2.php'); ?>
 
   <!-- home page  -->
+
   <div class="hero-section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <h1 class="hero-title">MEN'S SALON MANAGEMENT SYSTEM <i class="fa fa-scissors"></i></h1>
+          <h1 class="hero-title">Men's Salon manegement System<i class="fa fa-scissors"></i></h1>
           <p class="hero-text"><strong>YOUR TYPES <i class="fa fa-users"></i> , YOUR STYLE <i
                 class="fa fa-angellist"></i> , YOUR COLOR <i class="fa fa-asterisk"></i> .</strong> </p>
-                <p class="hero-text2"><strong>ANY TIME ANYWHERE "24X7" OPEN</strong> </p>
+          <p class="hero-text2"><strong>ANY TIME ANYWHERE "24X7" OPEN</strong> </p>
           <a href="login.php" class="btn btn-default">Make an Appointment <i class="fa fa-bookmark-o"></i></a>
         </div>
       </div>
@@ -62,20 +64,6 @@ include('includes/dbconnection.php');
             class="img-responsive"></div>
         <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
           <div class="well-block">
-            <?php
-            $ret = mysqli_query($con, "select * from tblpage where PageType='aboutus' ");
-            $cnt = 1;
-            while ($row = mysqli_fetch_array($ret)) {
-
-              ?>
-              <h1>
-                <?php echo $row['PageTitle']; ?>
-              </h1>
-              <h5 class="small-title ">best experience ever</h5>
-              <p>
-                <?php echo $row['PageDescription']; ?>
-              </p>
-            <?php } ?>
           </div>
         </div>
       </div>
@@ -85,53 +73,66 @@ include('includes/dbconnection.php');
 
   <h2 class="mission_vision-title">Misson & Vision</h2>
 
-<!-- mission vision section -->
-<section class="mission-vision">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="mission">
-          <h3>Our Mission <i class="fa fa-user-secret"></i></h3>
-          <p>At our salon management system, our mission is to provide top-notch salon services to our clients by
-            using high-quality products, providing personalized attention, and creating a relaxing atmosphere. We
-            strive to exceed our clients' expectations by staying up-to-date with the latest trends and techniques,
-            while also maintaining an eco-friendly and sustainable approach to our business.</p>
+  <!-- mission vision section -->
+  <section class="mission-vision">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mission">
+            <h3>Our Mission <i class="fa fa-user-secret"></i></h3>
+            <p>At our salon management system, our mission is to provide top-notch salon services to our clients by
+              using high-quality products, providing personalized attention, and creating a relaxing atmosphere. We
+              strive to exceed our clients' expectations by staying up-to-date with the latest trends and techniques,
+              while also maintaining an eco-friendly and sustainable approach to our business.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="vision">
-          <h3>Our Vision <i class="fa fa-opencart"></i></h3>
-          <p>Our vision is to become a leading salon management system by empowering salon owners to streamline their
-            operations, enhance their customer experiences, and increase their profitability. We aim to achieve this
-            vision by leveraging cutting-edge technology, fostering a culture of innovation and collaboration, and
-            providing unparalleled customer service to our clients.</p>
+        <div class="col-md-6">
+          <div class="vision">
+            <h3>Our Vision <i class="fa fa-opencart"></i></h3>
+            <p>Our vision is to become a leading salon management system by empowering salon owners to streamline their
+              operations, enhance their customer experiences, and increase their profitability. We aim to achieve this
+              vision by leveraging cutting-edge technology, fostering a culture of innovation and collaboration, and
+              providing unparalleled customer service to our clients.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- mission vision end -->
+  </section>
+  <!-- mission vision end -->
 
   <!-- what we do section -->
-  <div class="what-we-do">
-    <h2>What We Do</h2>
-    <ul>
-      <li> <i class="fa fa-check-circle-o"></i> <b>Haircuts:</b> Our stylists and barbers are experts in men's haircuts,
-        from classic cuts to modern styles. We take the time to understand your individual style and preferences, so you
-        can trust us to deliver the perfect cut every time.</li>
-      <li> <i class="fa fa-check-circle-o"></i><b> Beard and Mustache Grooming: </b> Whether you're looking to keep your
-        beard neat and tidy or want to try out a new style, our barbers have the skills and expertise to help you
-        achieve the perfect look.</li>
-      <li> <i class="fa fa-check-circle-o"></i> <b>Shaves:</b> There's nothing like a hot towel shave to leave you
-        feeling refreshed and rejuvenated. Our barbers use the latest techniques and premium products to give you the
-        closest, smoothest shave possible.</li>
-      <li> <i class="fa fa-check-circle-o"></i> <b>Coloring:</b> Whether you want to cover up gray hair or try out a new
-        look, our stylists can help you achieve the perfect hair color to suit your style and personality.</li>
-      <li> <i class="fa fa-check-circle-o"></i><b> Styling: </b>From special occasions to everyday looks, our stylists
-        can help you achieve the perfect style to suit any occasion. We use the latest techniques and products to ensure
-        that your hair looks great all day.</li>
-    </ul>
-  </div>
+  <section>
+    <container>
+      <div class="what-we-do">
+        <h2>What We Do</h2>
+        <ul>
+          <li> <i class="fa fa-check-circle-o"></i> <b>Haircuts:</b> Our stylists and barbers are experts in men's
+            haircuts,
+            from classic cuts to modern styles. We take the time to understand your individual style and preferences, so
+            you
+            can trust us to deliver the perfect cut every time.</li>
+          <li> <i class="fa fa-check-circle-o"></i><b> Beard and Mustache Grooming: </b> Whether you're looking to keep
+            your
+            beard neat and tidy or want to try out a new style, our barbers have the skills and expertise to help you
+            achieve the perfect look.</li>
+          <li> <i class="fa fa-check-circle-o"></i> <b>Shaves:</b> There's nothing like a hot towel shave to leave you
+            feeling refreshed and rejuvenated. Our barbers use the latest techniques and premium products to give you
+            the
+            closest, smoothest shave possible.</li>
+          <li> <i class="fa fa-check-circle-o"></i> <b>Coloring:</b> Whether you want to cover up gray hair or try out a
+            new
+            look, our stylists can help you achieve the perfect hair color to suit your style and personality.</li>
+          <li> <i class="fa fa-check-circle-o"></i><b> Styling: </b>From special occasions to everyday looks, our
+            stylists
+            can help you achieve the perfect style to suit any occasion. We use the latest techniques and products to
+            ensure
+            that your hair looks great all day.</li>
+        </ul>
+      </div>
+    </container>
+
+  </section>
+
   <!-- what we do section end -->
 
 
@@ -232,15 +233,14 @@ include('includes/dbconnection.php');
           <h1 class="cta-title">Book your online Appointment</h1>
         </div>
         <div class="col-lg-4 col-sm-5 col-md-4 col-xs-12">
-          <a href="login.php" class="btn btn-white btn-lg mt20">Book Appointment <i
-              class="fa fa-bookmark-o"></i></a>
+          <a href="login.php" class="btn btn-white btn-lg mt20">Book Appointment <i class="fa fa-bookmark-o"></i></a>
         </div>
       </div>
     </div>
   </div>
   <!-- book appointment section end -->
 
-  
+
   <!-- /.footer-->
   <?php include_once('includes/footer2.php'); ?>
 
@@ -252,6 +252,7 @@ include('includes/dbconnection.php');
   <!-- sticky header -->
   <script src="js/jquery.sticky.js"></script>
   <script src="js/sticky-header.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
 
 
   <!-- javascript for mission vision -->
