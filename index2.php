@@ -111,7 +111,6 @@ include('includes/dbconnection.php');
   </div>
 </section>
 <!-- mission vision end -->
-  
 
   <!-- what we do section -->
   <div class="what-we-do">

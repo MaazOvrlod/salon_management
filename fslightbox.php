@@ -1,0 +1,38 @@
+<?php
+echo '<section class="gallery-grid-section">';
+echo '<div class="container">';
+echo '<div class="gallery-grid__title">';
+echo '<h2 class="headline"><span class="secondary">latest </span><span class="bold primary">Galleries</span></h2>';
+echo '</div>';
+echo '<div class="swiper gallery-grid-swiper">';
+echo '<div class="swiper-wrapper">';
+echo '<div class="swiper-slide">';
+echo '<div class="gallery-grid">';
+echo '<div class="g-item video"><a data-fslightbox="gallery" href="/assets/videos/misk-hub-v2.mp4"><img src="/assets/images/first-video-gallery.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/gallery-overlay-image.png"><img src="/assets/images/first-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/gallery-overlay.png"><img src="/assets/images/second-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/third-gallery-card.png"><img src="/assets/images/third-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/fourth-gallery-card.png"><img src="/assets/images/fourth-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/fifth-gallery-card.png"><img src="/assets/images/fifth-gallery-card.png"/></a></div>';
+echo '<div class="g-item video"><a data-fslightbox="gallery" href="/assets/videos/misk-hub-v2.mp4"><img src="/assets/images/second-video-gallery.png"/></a></div>';
+echo '</div>';
+echo '</div>';
+echo '<div class="swiper-slide">';
+echo '<div class="gallery-grid">';
+echo '<div class="g-item video"><a data-fslightbox="gallery" href="/assets/videos/misk-hub-v2.mp4"><img src="/assets/images/first-video-gallery.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/gallery-overlay-image.png"><img src="/assets/images/first-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/gallery-overlay.png"><img src="/assets/images/second-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/third-gallery-card.png"><img src="/assets/images/third-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/fourth-gallery-card.png"><img src="/assets/images/fourth-gallery-card.png"/></a></div>';
+echo '<div class="g-item image"><a data-fslightbox="gallery" href="/assets/images/fifth-gallery-card.png"><img src="/assets/images/fifth-gallery-card.png"/></a></div>';
+echo '<div class="g-item video"><a data-fslightbox="gallery" href="/assets/videos/misk-hub-v2.mp4"><img src="/assets/images/second-video-gallery.png"/></a></div>';
+echo '</div>';
+echo '</div>';
+echo '</div>';
+echo '<div class="gallery-grid__pagination"><button class="prev d-none d-lg-flex"><svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1.56592" width="36" height="36" rx="18" stroke="var(--primary)" stroke-width="2"/><g clip-path="url(#clip0_9979_59182)"><path d="M18.4764 11.3091C18.4136 11.256 18.3401 11.2147 18.2601 11.1879C18.1801 11.161 18.0952 11.1489 18.0102 11.1525C17.9252 11.156 17.8417 11.1749 17.7646 11.2083C17.6875 11.2417 17.6183 11.2888 17.5608 11.3469C17.4448 11.4644 17.3839 11.6197 17.3916 11.7787C17.3954 11.8574 17.4159 11.9347 17.4519 12.006C17.488 12.0774 17.5388 12.1416 17.6016 12.1947L25.5954 18.9519L11.2704 18.9519C11.0985 18.9519 10.9337 19.0151 10.8122 19.1277C10.6907 19.2402 10.6224 19.3928 10.6224 19.5519C10.6224 19.7111 10.6907 19.8637 10.8122 19.9762C10.9337 20.0887 11.0985 20.1519 11.2704 20.1519L25.5915 20.1519L17.6016 26.9055C17.5388 26.9586 17.4878 27.0227 17.4516 27.094C17.4155 27.1654 17.3949 27.2426 17.3909 27.3214C17.387 27.4001 17.3999 27.4787 17.4288 27.5529C17.4578 27.627 17.5022 27.6951 17.5595 27.7533C17.6169 27.8116 17.6861 27.8588 17.7631 27.8922C17.8402 27.9257 17.9236 27.9448 18.0086 27.9484C18.0936 27.952 18.1786 27.9401 18.2586 27.9133C18.3387 27.8866 18.4123 27.8454 18.4751 27.7923L27.4383 20.2155C27.551 20.1207 27.6379 20.0026 27.6919 19.8708C27.746 19.739 27.7656 19.5973 27.7493 19.4571C27.7252 19.2378 27.6144 19.0344 27.4383 18.8859L18.4764 11.3091Z" fill="var(--primary)" stroke="var(--primary)" stroke-width="0.7" stroke-linejoin="round"/></g><defs><clipPath id="clip0_9979_59182"><rect width="18" height="18" fill="var(--primary)" transform="translate(28 10.5659) rotate(-90)"/></clipPath></defs></svg></button>';
+echo '<div';
+echo 'class="swiper-pagination"></div><button class="next d-none d-lg-flex"> <svg width="38" height="39" viewBox="0 0 38 39" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1.56592" width="36" height="36" rx="18" stroke="#D24204" stroke-width="2"/><g clip-path="url(#clip0_9979_55330)"><path d="M18.4764 11.3091C18.4136 11.256 18.3401 11.2147 18.2601 11.1879C18.1801 11.161 18.0952 11.1489 18.0102 11.1525C17.9252 11.156 17.8417 11.1749 17.7646 11.2083C17.6875 11.2417 17.6183 11.2888 17.5608 11.3469C17.4448 11.4644 17.3839 11.6197 17.3916 11.7787C17.3954 11.8574 17.4159 11.9347 17.4519 12.006C17.488 12.0774 17.5388 12.1416 17.6016 12.1947L25.5954 18.9519L11.2704 18.9519C11.0985 18.9519 10.9337 19.0151 10.8122 19.1277C10.6907 19.2402 10.6224 19.3928 10.6224 19.5519C10.6224 19.7111 10.6907 19.8637 10.8122 19.9762C10.9337 20.0887 11.0985 20.1519 11.2704 20.1519L25.5915 20.1519L17.6016 26.9055C17.5388 26.9586 17.4878 27.0227 17.4516 27.094C17.4155 27.1654 17.3949 27.2426 17.3909 27.3214C17.387 27.4001 17.3999 27.4787 17.4288 27.5529C17.4578 27.627 17.5022 27.6951 17.5595 27.7533C17.6169 27.8116 17.6861 27.8588 17.7631 27.8922C17.8402 27.9257 17.9236 27.9448 18.0086 27.9484C18.0936 27.952 18.1786 27.9401 18.2586 27.9133C18.3387 27.8866 18.4123 27.8454 18.4751 27.7923L27.4383 20.2155C27.551 20.1207 27.6379 20.0026 27.6919 19.8708C27.746 19.739 27.7656 19.5973 27.7493 19.4571C27.7252 19.2378 27.6144 19.0344 27.4383 18.8859L18.4764 11.3091Z" fill="#D24204" stroke="#D24204" stroke-width="0.7" stroke-linejoin="round"/></g><defs><clipPath id="clip0_9979_55330"><rect width="18" height="18" fill="white" transform="translate(28 10.5659) rotate(90)"/></clipPath></defs></svg></button></div>';
+echo '</div>';
+echo '</div>';
+echo '</section>';
+?>
